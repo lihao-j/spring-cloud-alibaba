@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudalibaba-provider-payment9004" />
+        <module name="cloudalibaba-provider-payment9003" />
+        <module name="springcloudalibaba-config-nacos-client3377" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
+        <module name="cloud-api-commons" />
+        <module name="springcloudalibaba-provider-payment9001" />
+        <module name="springcloudalibaba-sentinel-service8401" />
+        <module name="cloudalibaba-consumer-nacos-order84" />
+        <module name="springcloudalibaba-provider-payment9002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloudalibaba" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

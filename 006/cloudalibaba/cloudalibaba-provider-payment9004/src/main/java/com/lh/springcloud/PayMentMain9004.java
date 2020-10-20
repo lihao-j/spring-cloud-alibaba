@@ -1,0 +1,14 @@
+package com.lh.springcloud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class PayMentMain9004 {
+
+    public static void main(String[] args) {
+        SpringApplication.run(PayMentMain9004.class,args);
+    }
+}
