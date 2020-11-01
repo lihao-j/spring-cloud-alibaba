@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lh.mybatis.dao.EmployeeMapperDynamicSQL">
+    <!-- if
+    choose (when, otherwise)
+    trim (where, set)
+    foreach
+    -->
+    <!-- public List<Employee> getEmpsByConditionIf(Employee employee); -->
+    <select id="getEmpsByConditionIf" resultType="employee">
+        select * from tbl_employee where
+        <if test="id != null">
+            id = #{id}
+        </if>
+        <if test="lastName!=null and lastName!=''">
+            and last_name like #{lastName}
+        </if>
+        <if test="email!=null and email.trim()!=''">
+            and email = #{email}
+        </if>
+--      会自动进行字符串与数字转换判断
+        <if test="gender==0 or gender==1">
+            and gender = #{gender}
+        </if>
+
+    </select>
+
+</mapper>
